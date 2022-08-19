@@ -27,4 +27,25 @@ main
         outline: none
         border-radius: 15px
         box-shadow: 5px 5px 5px rgba(#000, .1) -5px -5px -5px #fff, inset 5px 5px 5px rgba(#000, .1)
-        
+        overflow: hidden
+        &::-webkit-slider-thumb //no está toamando los estilos
+            -webkit-appearance: none
+            appearance: none
+            width: 15px
+            height: 15px
+            background: #fff
+            border-radius: 50%
+            border: 2px solid #0074cf
+            box-shadow: -400px 0 0 400px #0074cf
+            cursor: pointer
+    .rangeValue
+        position: relative
+        text-align: center
+        width: 60px
+        font-size: 1.25em
+        font-weight: 500
+        color: #fff
+        background-color: #27a0ff
+        margin-left: 15px
+        border-radius: 25px
+        box-shadow: 5px 5px 10px rgba(#000, .1 ), -5px -5px -10px #fff, inset 5px 5px 10px rgba(#000, .1 ), inset 5px 5px 10px rgba(#fff, .25 )
